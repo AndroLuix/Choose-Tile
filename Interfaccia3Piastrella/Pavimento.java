@@ -11,6 +11,8 @@ public class Pavimento {
 	
 	
 	public double getSuperficie(Piastrella tipo) {
+		/*
+		Non necessario, metodo getArea nella abstract class
 		if( tipo instanceof PiastrellaQuadrata) {
 			PiastrellaQuadrata p = (PiastrellaQuadrata) tipo;
 			return p.getArea() * numeroPiastrelle;
@@ -20,6 +22,8 @@ public class Pavimento {
 			return p.getArea() * numeroPiastrelle;
 		}
 		return 42;
+		*/
+		return tipo.getArea() * numeroPiastrelle;
 		
 	}
 
